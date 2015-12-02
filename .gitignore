@@ -1,0 +1,10 @@
+cocos2d/cocos/2d/Debug.win32
+cocos2d/cocos/editor-support/spine/proj.win32/Debug.win32/
+cocos2d/cocos/platform/android/java/local.properties
+cocos2d/external/Box2D/proj.win32/Debug.win32/
+cocos2d/external/bullet/proj.win32/Debug.win32/
+cocos2d/external/recast/proj.win32/Debug.win32/
+proj.win32/.vs/DiceMage/v14/.suo
+proj.win32/Debug.win32/
+proj.win32/DiceMage.opensdf
+proj.win32/DiceMage.sdf

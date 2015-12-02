@@ -1,6 +1,8 @@
 #include "HelloWorldScene.h"
-
+#include "UserProfile.h"
+#include "JsonParser.h"
 USING_NS_CC;
+//using namespace ui;
 
 Scene* HelloWorld::createScene()
 {
@@ -26,7 +28,7 @@ bool HelloWorld::init()
     {
         return false;
     }
-    
+	UserProfile::instance()->CheckData();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -78,6 +80,7 @@ bool HelloWorld::init()
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {
+	JsonParser::instance()->ReadJson("UserInfo.json", 0, "UserInfo", 0, "Diamond");
     Director::getInstance()->end();
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)

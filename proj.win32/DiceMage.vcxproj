@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -96,7 +96,8 @@
       </Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command></Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
@@ -108,7 +109,6 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
       <Inputs>$(TargetFileName)</Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -139,17 +139,58 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
       </Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command></Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\BagLayer.cpp" />
+    <ClCompile Include="..\Classes\ChooseLevelLayer.cpp" />
+    <ClCompile Include="..\Classes\EquipLayer.cpp" />
+    <ClCompile Include="..\Classes\EventManager.cpp" />
+    <ClCompile Include="..\Classes\ExitLayer.cpp" />
+    <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\JsonParser.cpp" />
+    <ClCompile Include="..\Classes\LoadingScene.cpp" />
+    <ClCompile Include="..\Classes\LotteryLayer.cpp" />
+    <ClCompile Include="..\Classes\MagicBookLayer.cpp" />
+    <ClCompile Include="..\Classes\MainScene.cpp" />
+    <ClCompile Include="..\Classes\Monster.cpp" />
+    <ClCompile Include="..\Classes\PauseLayer.cpp" />
+    <ClCompile Include="..\Classes\Player.cpp" />
+    <ClCompile Include="..\Classes\ResultLayer.cpp" />
+    <ClCompile Include="..\Classes\SetLayer.cpp" />
+    <ClCompile Include="..\Classes\ShadowLayer.cpp" />
+    <ClCompile Include="..\Classes\ShopLayer.cpp" />
+    <ClCompile Include="..\Classes\UserProfile.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\BagLayer.h" />
+    <ClInclude Include="..\Classes\ChooseLevelLayer.h" />
+    <ClInclude Include="..\Classes\EnmuResource.h" />
+    <ClInclude Include="..\Classes\EquipLayer.h" />
+    <ClInclude Include="..\Classes\EventManager.h" />
+    <ClInclude Include="..\Classes\ExitLayer.h" />
+    <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\JsonParser.h" />
+    <ClInclude Include="..\Classes\LoadingScene.h" />
+    <ClInclude Include="..\Classes\LotteryLayer.h" />
+    <ClInclude Include="..\Classes\MagicBookLayer.h" />
+    <ClInclude Include="..\Classes\MainScene.h" />
+    <ClInclude Include="..\Classes\Monster.h" />
+    <ClInclude Include="..\Classes\PauseLayer.h" />
+    <ClInclude Include="..\Classes\Player.h" />
+    <ClInclude Include="..\Classes\ResultLayer.h" />
+    <ClInclude Include="..\Classes\SetLayer.h" />
+    <ClInclude Include="..\Classes\ShadowLayer.h" />
+    <ClInclude Include="..\Classes\ShopLayer.h" />
+    <ClInclude Include="..\Classes\Singleton.h" />
+    <ClInclude Include="..\Classes\UserProfile.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
